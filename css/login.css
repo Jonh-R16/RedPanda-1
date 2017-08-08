@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	background-image: url(../img/fondo.png);
+	background-attachment: fixed;
+	background-size: 1500px;
+}
+.logo{
+	height: 200px;
+	width: 40%;
+	
+	
+}
+form{
+	margin-left: 20%;
+	padding: 4%;
+	margin-top: 2%;
+	width: 50%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+}
+@font-face{
+	font-family: redpanda;
+	src: url(../fonts/fuente1.ttf);
+}
+@font-face{
+	font-family: geo;
+	src: url(../fonts/geo.ttf);
+}
+h1{
+	font-family:redpanda;
+	font-size: 3em;
+}
+label{
+	font-family: geo;
+	font-size: 1em;
+}
+button{
+	font-family: geo;
+	font-size: 1em;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
