@@ -4,7 +4,7 @@
 			<meta charset="utf-8">
 			<title>Red Panda</title>
 			<link rel="stylesheet" type="text/css" href="css/estilo.css">
-			<script type="text/javascript" src="../js/reproductor.js"></script>
+			<script type="text/javascript" src="js/reproductor.js"></script>
 		</head>
 		<body>
 	
@@ -19,16 +19,18 @@
 				</ul>
 			</nav>
 			<div id="reproductor">
-			<h3>No hay audio insertado</h3>
-			<section class="insertar">
-			<input id="archivo" type="file">
-			<button onclick="reproducir()">Reproducir</button>
+			<section>
+			<button type="button" id="play">Play</button>
+			<button type="button" id="pause">Pause</button>
+			<button type="button" id="stop">Stop</button>
+			<p>Volumen: <input type="range" id="volumen" style=".1" min="0" max="1" value="1"></p>
+			<p>Tiempo: <input type="range" id="tiempo" style=".1" 
+			min="0" max="0" value="0"></p><br><br><br><br>
+			<p>Canción: <strong id="cancion"></strong></p>
+			<audio id="audio">
+				<source src="Mess_Of_Me_Switchfoot.mp3" type="audio/mpeg">
+			</audio>
 			</section>
-			<div id="audiobox">
-			</div>
-				<canvas id="analizador">
-					
-				</canvas>
 			</div>
 		</body>
 </html>
