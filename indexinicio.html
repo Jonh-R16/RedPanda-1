@@ -3,12 +3,13 @@
 		<head>
 			<meta charset="utf-8">
 			<title>Red Panda</title>
-			<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+			<link rel="stylesheet" type="text/css" href="css/estilo.css">
+			<script type="text/javascript" src="../js/reproductor.js"></script>
 		</head>
 		<body>
 	
 			<nav class="menu2">
-				<img class="logo" src="../img/logo.png">
+				<img class="logo" src="img/logo.png">
 					<button>NUEVO</button>
 					<li><a id="menu" href="#">Mi Perfil</a></li>
 					<li><a id="menu" href="#">Mi Unidad</a></li>
@@ -17,8 +18,17 @@
 					<p class="desarrollado">Desarrollado por: Josué Rauda y Jonathan Rodríguez</p>
 				</ul>
 			</nav>
-			<div>
-				
+			<div id="reproductor">
+			<h3>No hay audio insertado</h3>
+			<section class="insertar">
+			<input id="archivo" type="file">
+			<button onclick="reproducir()">Reproducir</button>
+			</section>
+			<div id="audiobox">
+			</div>
+				<canvas id="analizador">
+					
+				</canvas>
 			</div>
 		</body>
 </html>
